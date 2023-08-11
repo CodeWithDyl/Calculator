@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dylan's Calculator</title>
-        <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="main">
-            <div class="calculator">
-                <div class="screen">
-                    <div class="buttons-grid">
-                        <button>Hello</button>
-                        <button>Hello</button>
-                    </div>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dylan's Calculator</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="calculator">
+        <div class="screen">
+          <div class="lastCalculation">1+2 = EVERY SECOND COUNTS</div>
+          <div class="currentCalculation">3</div>
         </div>
-    </body>
+
+        <div class="button-grid" style="grid-template-columns: repeat(2, 1fr)">
+          <button type="button" class="doublebutton" id="clear">Clear</button>
+          <button type="button" class="doublebutton" id="delete">Delete</button>
+        </div>
+
+        <div class="button-grid">
+          <button class="button" id="7">7</button>
+          <button class="button" id="8">8</button>
+          <button class="button" id="9">9</button>
+          <button class="button" id="divide">÷</button>
+          <button class="button" id="4">4</button>
+          <button class="button" id="5">5</button>
+          <button class="button" id="6">6</button>
+          <button class="button" id="multiply">x</button>
+          <button class="button" id="1">1</button>
+          <button class="button" id="2">2</button>
+          <button class="button" id="3">3</button>
+          <button class="button" id="subtract">-</button>
+          <button class="button" id="decimal">.</button>
+          <button class="button" id="0">0</button>
+          <button class="button" id="compute">=</button>
+          <button class="button" id="add">+</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
