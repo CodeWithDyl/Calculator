@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dylan's Calculator</title>
     <link href="styles.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="main">
       <div class="calculator">
-        <div class="screen">
-          <div class="lastCalculation">1+2 = EVERY SECOND COUNTS</div>
-          <div class="currentCalculation">3</div>
+        <div class="screen" id="screen">
+          <div class="currentCalculation"></div>
         </div>
 
         <div class="button-grid" style="grid-template-columns: repeat(2, 1fr)">
@@ -20,7 +20,7 @@
         </div>
 
         <div class="button-grid">
-          <button class="button" id="7">7</button>
+          <button class="button" id="7" onclick="">7</button>
           <button class="button" id="8">8</button>
           <button class="button" id="9">9</button>
           <button class="button" id="divide">÷</button>
