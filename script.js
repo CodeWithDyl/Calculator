@@ -36,3 +36,16 @@ function operate(operator, num1, num2) {
       break;
   }
 }
+
+const screen = document.querySelector('#screen');
+
+const lastCalculation = document.createElement('div');
+lastCalculation.classList.add('lastCalculation');
+lastCalculation.textContent = "Manipulation";
+
+const currentCalculation = document.createElement('div');
+currentCalculation.classList.add('currentCalculation');
+currentCalculation.textContent = "DOM Manipulation";
+
+screen.appendChild(lastCalculation);
+screen.appendChild(currentCalculation);
