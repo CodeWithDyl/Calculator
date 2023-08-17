@@ -16,13 +16,18 @@
   <body>
     <main class="main">
       <div class="calculator">
-        <div class="screen" id="screen">
-          <div class="currentCalculation"></div>
+        <div class="screen">
+          <div class="lastCalculation" id="lastCalculation"></div>
+          <div class="currentCalculation" id="currentCalculation"></div>
         </div>
 
         <div class="button-grid" style="grid-template-columns: repeat(2, 1fr)">
-          <button type="button" class="doublebutton" id="clear">Clear</button>
-          <button type="button" class="doublebutton" id="delete">Delete</button>
+          <button class="doublebutton" id="clearBtn" onclick="this.blur()">
+            Clear
+          </button>
+          <button class="doublebutton" id="deleteBtn" onclick="this.blur()">
+            Delete
+          </button>
         </div>
 
         <div class="button-grid">
@@ -56,7 +61,7 @@
         </script>
         Dylan J. Dombrowski
       </p>
-      <a href="https://github.com/codewithdyl" target="_blank">
+      <a href="https://github.com/dylanbytes" target="_blank">
         <i class="fab fa-github"></i
       ></a>
     </footer>
